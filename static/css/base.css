@@ -1,11 +1,110 @@
 html {
-    height: 100%
+    height: 100%;
 }
+
 body {
     background: url('/media/homepage.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    font-family: 'Satisfy', cursive;
+    font-family: 'Sora';
+}
+.box-element {
+    box-shadow: hsl(0,0%, 80%) 0 0 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.product {
+    border-radius: 0 0 4px 4px;
+}
+
+.bg-white {
+    background-color: blueviolet !important;
+}
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 110px;
+    /* margin-bottom: 0; */
+}
+
+.shop-now-button {
+    background: blueviolet;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+div.dropdown-menu:hover,
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+.text-white {
+    color: #fff !important;
 }
 
 
+.border-white {
+    border: 1px solid white !important;
+}
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}

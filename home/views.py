@@ -9,13 +9,19 @@ def index(request):
     return render(request, 'home/index.html', context)
 
 
+def shop(request):
+    """ A view to the shop page """
+    context = {}
+    return render(request, 'home/shop.html', context)
+
+
 def bag(request):
-    """ A view to return the shopping bag page """
+    """ A view to the shopping bag page """
     context = {}
     return render(request, 'home/bag.html', context)
 
 
 def checkout(request):
-    """ A view to return the checkout page """
+    """ A view to the checkout page """
     context = {}
     return render(request, 'home/checkout.html', context)
