@@ -86,6 +86,22 @@ div.dropdown-menu:hover,
 .border-white {
     border: 1px solid white !important;
 }
+a.department-badge > span.badge:hover {
+    background: #212529 !important;
+    color: rgb(145, 62, 62) !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 
 /* ------------------Products page background-----------Code adapted from mini project--------*/
 .overlay {

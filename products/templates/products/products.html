@@ -15,6 +15,11 @@
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Products</h2>
+                {% for d in current_departments %}
+                    <a class="department-badge text-decoration-none" href="{% url 'products' %}?department={{ d.name }}">
+                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ d.friendly_name }}</span>
+                    </a>
+                {% endfor %}
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -25,14 +30,14 @@
                         <div class="sort-select-wrapper w-50">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price</option>
-                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price</option>
-                                <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating</option>
-                                <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating</option>
-                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name</option>
-                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name</option>
-                                <option value="department_asc" {% if current_sorting == 'department_asc' %}selected{% endif %}>Department</option>
-                                <option value="department_desc" {% if current_sorting == 'department_desc' %}selected{% endif %}>Department</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price(low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price(high to low)</option>
+                                <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating(low to high)</option>
+                                <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating(high to low)</option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name(low to high)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name(high to low)</option>
+                                <option value="department_asc" {% if current_sorting == 'department_asc' %}selected{% endif %}>Department(Z to A)</option>
+                                <option value="department_desc" {% if current_sorting == 'department_desc' %}selected{% endif %}>Department(A to Z)</option>
                             </select>
                         </div>
                     </div>
