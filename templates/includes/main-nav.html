@@ -15,8 +15,8 @@
                 Department
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">Men</a>
-                <a href="" class="dropdown-item">Women</a>
+                <a href="{% url 'products' %}?department=men" class="dropdown-item">Men</a>
+                <a href="{% url 'products' %}?department=women" class="dropdown-item">Women</a>
             </div>
         </li>
     </ul>
