@@ -22,7 +22,7 @@ body {
 .bg-white {
     background-color: blueviolet !important;
 }
-/* from Bulma */
+/* from Bulma ---code adapted from mini project */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -79,13 +79,26 @@ div.dropdown-menu:hover,
     color: #fff !important;
 }
 
+.text-light {
+    color:floralwhite !important;
+}
 
 .border-white {
     border: 1px solid white !important;
 }
 
+/* ------------------Products page background-----------Code adapted from mini project--------*/
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
 
-/* -------------------------------- Media Queries */
+/* -------------------------------- Media Queries------Code adapted from mini project */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
