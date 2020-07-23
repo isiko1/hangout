@@ -102,6 +102,13 @@ a.department-badge > span.badge:hover {
 .btt-link {
     cursor: pointer;
 }
+.bag-items{
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+    margin: 150px;
+}
 
 /* ------------------Products page background-----------Code adapted from mini project--------*/
 .overlay {

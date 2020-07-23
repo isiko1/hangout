@@ -8,12 +8,6 @@ def index(request):
     return render(request, 'home/index.html')
 
 
-def bag(request):
-    """ A view to the shopping bag page """
-    context = {}
-    return render(request, 'home/bag.html', context)
-
-
 def checkout(request):
     """ A view to the checkout page """
     context = {}
