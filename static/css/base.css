@@ -146,6 +146,10 @@ a.department-badge > span.badge:hover {
         z-index: 1030;
     }
 
+@media (min-width: 768px){
+    .mt-md-5, .my-md-5 {
+    margin-top: 10rem!important;
+}
     .header-container {
         padding-top: 164px;
     }

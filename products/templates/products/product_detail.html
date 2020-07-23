@@ -29,7 +29,7 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                     
                     {% if product.department %}
                                             <p class="small mt-1 mb-0">
@@ -47,6 +47,30 @@
                                         <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
+                        {% with product.has_sizes as s %}
+                            {% if s %}
+                                <div class="col-12">
+                                    <p><strong>Size:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                        <option value= "int [1]"> 1 </option>
+                                        <option value="int [2]"> 2</option>
+                                        <option value="int [3]"> 3 </option>
+                                        <option value= "int [4]"> 4 </option>
+                                        <option value="int [5]"> 5</option>
+                                        <option value="int [6]"> 6 </option>
+                                        <option value= "int [6 1/2]"> 6.5 </option>
+                                        <option value="int [7]"> 7</option>
+                                        <option value="int [8]"> 8 </option>
+                                        <option value= "int [9 1/2]"> 9.5 </option>
+                                        <option value="int [10]"> 10</option>
+                                        <option value="int [10 1/2]"> 10.5 </option>
+                                        <option value= "int [11]"> 11 </option>
+                                        <option value="int [11 1/2]"> 11.5</option>
+                                        <option value="int [12]"> 12 </option>
+                                    </select>
+                                </div>
+                            {% endif %}
+                            {% endwith %}
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
