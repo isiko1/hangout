@@ -1,0 +1,58 @@
+{% extends 'base.html%}
+{% block content%}
+<main>
+<div class="container wow fadeIn">
+<h2 class="my-5 text-center">Checkout Form</h2>
+<div class="row">
+<div class="col-md-8 mb-4">
+<div class="card">
+<form class="card-body">
+<div class="md-form mb-5">
+<input type="text" id="address" class="form-control">
+<label for="address" class="address">Address</label>
+</div>
+<div class="md-form mb-5">
+<input type="text" id="address2" class="form-control">
+<label for="address2" class="address2">Address 2(optional)</label>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-12 mb-4">
+<label for="country">Country</label>
+<select  class="custom-select d-block w-100" id="country" required>
+<option value="">Choose...</option>
+<option>United Kingdom</option>
+<div class="invalid-feedback">
+Please select a valid country.
+</div>
+</select>
+</div>
+</div>
+<hr>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="same-address">
+<label for="same-address" class="custom-control-label">Shipping address is the same as my billing address</label>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="save-info">
+<label for="save-info" class="custom-control-label">Save this information for the next time</label>
+</div>
+<div class="custom-control custom-radio">
+<input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+<label for="paypal" class="custom-control-label">Paypal</label>
+</div>
+<div class="custom-control custom-radio">
+<input id="stripe" name="paymentMethod" type="radio" class="custom-control-input" required>
+<label for="stripe" class="custom-control-label">Stripe</label>
+</div>
+<hr class="mb-4">
+<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to Checkout</button>
+</form>
+</div>
+</div>
+<h4 class="d-flex justify-content-between align-items-center mb3">
+<span class="text-muted">Your shopping bag</span>
+<span class="badge badge-secondary badge-pill">3</span></h4>
+</div>
+</div>
+</main>
+{% endblock%}
