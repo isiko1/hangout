@@ -3,18 +3,32 @@ html {
 }
 /* Login Page */
 
+.login {
+    background:  blueviolet !important;;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-bottom: inherit;
     font-weight: 500;
     line-height: 1.2;
-    color: black;
+    color: white;
     text-transform: uppercase;
 }
-.social{
-    height: 100%;
-    background: #e9ecef ! important;
-    margin-top: 130px; 
+.button {
+    color: darkblue;
 }
+.social {
+    height: 100%;
+    background: #343a40!important;
+    margin-top: 130px;
+    color: beige;
+}
+.fa {
+    color:  blueviolet;
+} 
+.btn {
+    color: beige;
+}
+
 /* Homepage */
 
 body {
