@@ -49,8 +49,7 @@ INSTALLED_APPS = [
 
     # other
     'crispy_forms',
-
-]
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -60,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'hangout.urls'
@@ -82,6 +82,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
@@ -101,6 +103,10 @@ AUTHENTICATION_BACKENDS = [
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 
+    # login using social media
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.github.GithubOAuth2',
 ]
 
 SITE_ID = 1
@@ -113,6 +119,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
+LOGOUT_URL = 'logout'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'hangout.wsgi.application'
@@ -171,6 +178,13 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Stripe
+
 STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+
+# Social Media
+
+SOCIAL_AUTH_FACEBOOK_KEY = '342324553428060'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '3b4235a6febd5c7c44879d9ff49227b9'  # App Secret
