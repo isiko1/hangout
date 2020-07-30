@@ -29,6 +29,18 @@ html {
     color: beige;
 }
 
+/* logout */
+
+h1, h1 {
+    font-size: 2.5rem;
+    margin-top: 140px;
+    padding-left: 15px;
+}
+.sign-o {
+    color: beige;
+    padding-left: 15px;
+}
+
 /* Homepage */
 
 body {
