@@ -15,8 +15,20 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
+  <button class="btn-log" type="submit">{% trans 'Sign Out' %}</button>
+  
 </form>
+<form method="post" action="{% url 'home' %}">
+{% csrf_token %}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+  {% endif %}
+<hr>
+ <button class="btn-log" type="submit">{% trans 'Cancel' %}</button>
+ </form>
+
+
+
 
 
 {% endblock %}

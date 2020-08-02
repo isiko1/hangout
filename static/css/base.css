@@ -26,13 +26,19 @@ html {
     color: beige;
 }
 .fa {
-    color:  blueviolet;
+    color: beige;
 } 
 .btn-block {
-    background-color: rgba(108, 82, 211, 0.267);
+    background-color: white
 }
-.btn {
+.btn, {
     color: beige;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-top: 10px;
+    margin-left: auto;
 }
 
 /* logout */
@@ -46,7 +52,10 @@ h1, h1 {
     color: beige;
     padding-left: 15px;
 }
-
+.btn-log {
+    text-transform: uppercase;
+    margin-left: 25px;
+}
 /* Homepage */
 
 body {
