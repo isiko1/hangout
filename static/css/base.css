@@ -25,15 +25,19 @@ html {
     margin-top: 130px;
     color: beige;
 }
-.fa {
-    color: beige;
-} 
+.fa-fw {
+    text-align: center;
+    width: 1.25em;
+    color: blue!important;
+ {
+    color: rgb(96, 34, 230);
+
 .btn-block {
     background-color: white
 }
-.btn, {
+/*.btn, {
     color: beige;
-}
+}*/
 label {
     display: inline-block;
     margin-bottom: .5rem;
