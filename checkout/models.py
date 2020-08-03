@@ -40,8 +40,7 @@ class Order(models.Model):
         Update grand total each time a line item is added,
         accounting for delivery costs.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))
-        ['lineitem_total__sum'] or 0
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'),)
         self.grand_total = self.order_total
         self.save()
 
@@ -64,7 +63,7 @@ class OrderLineItem(models.Model):
                               related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False,
                                 on_delete=models.CASCADE)
-    product_size = models.CharField(max_length=2,
+    product_size = models.CharField(max_length=3,
                                     null=True,
                                     blank=True)  # Sizes are as strings
     quantity = models.IntegerField(null=False, blank=False, default=0)
