@@ -1,0 +1,14 @@
+Dear {{ order.full_name }},
+
+Thank you for your order of {{ order.quantity }} {{ order.product_name }}.
+We aim to get your delivery to you within three working days. If this is not convenient for you,
+please contact customer service on 12345678 to arrange a suitable delivery date.
+
+All our deliveries are free of charge.
+
+We believe in customer satisfaction and look forward to your review of our products.
+
+Your Customer Service Team.
+
+{{ order.date }}
+
