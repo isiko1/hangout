@@ -179,12 +179,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static',
-                    'checkout', 'profiles'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media', 'profiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media',)
 
 # Stripe
 
