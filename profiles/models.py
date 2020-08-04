@@ -23,7 +23,8 @@ class UserProfile(models.Model):
     default_county = models.CharField(max_length=80, null=True, blank=True)
 
     # Option to load image field
-    image = models.ImageField(upload_to='profile_image', blank=True)
+    image = models.ImageField(default="default.jpg",
+                              upload_to='profile_image', blank=True)
 
     def __str__(self):
         return self.user.username
@@ -34,6 +35,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
     Create or update the user profile
     """
+
     if created:
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
