@@ -4,25 +4,37 @@ The user story is analogous to going to a high street and enterin a shop and tak
 What are the shoppers intentions and how does the owner/management accomodate this?
 
 User                        Would Like to be able                    So that he/she can
-                            Viewing and Navigation
+
+Shopper                     Viewing and Navigation                   See all different items in stock
 Shopper                     Go directly to a product                 Save Time and able to know if the product is available or not 
 Shopper                     Search for a product without
                             going through large search criteria      Save Time in comparing prices and finding a particular product.
 
+                            
+                            Register/Login
+
+Shopper                     Easy login and registeration             Save time and easy access to the site. Abel to store and save orders.
+                                                                     Is able to shop flexibly log out and login to continue where left off.
+
+Shopper                     Search and Sort
+
+                            to search products by department,        Have an overview of prices and various attributes and gain an insight into customer feedback.
+                            brand, all products, price or rating    
+
                             Purchase and Checkout
 
-Shopper                     Select product and size                   ensure the correct size and product is being purchased / is available
-                            Amend quantity and size                   ensure the correct quantity and size is being purchased
-                            Remove and add products                   ensure the correct items are being purchased
-                            View the product in the shopping bag      ensure the quantity and product selected are correct
-                            View the total purchase amount before     avoid unnecessary loss of funds
+Shopper                     Select product and size                   Ensure the correct size and product is being purchased / is available
+                            Amend quantity and size                   Ensure the correct quantity and size is being purchased
+                            Remove and add products                   Ensure the correct items are being purchased
+                            View the product in the shopping bag      Ensure the quantity and product selected are correct
+                            View the total purchase amount before     Avoid unnecessary loss of funds
                             commiting to checkout.
                             Easily enter and validate payment         Peace of mind with hassle free payment that has secure validation.
                             information
                             confirm and query the amount by removing  See the total purchase amount reflects the items in the shopping bag.
                             or adding and removing products
                             view Shopping bag                         View the cost of items being added/removed
-                            View Shopping bag contents on checkout    confirm items being purchased
+                            View Shopping bag contents on checkout    Confirm items being purchased before going to checkout
                             Save shopping bag contents                Return to the site and continue where they left off.
                             View and order summary                    Be reassured of the purchase made and can check for mistakes made
                             recieve confirmation of purchase
@@ -30,7 +42,8 @@ Shopper                     Select product and size                   ensure the
                             View personal information and             Be assured the correct information held is correct.
                             delivery address
 
-Management Staff           Amend and remove stock                     Sales integrity and to ensure acurate and up to date product line
-                                                  
+Management Staff           Amend, add and remove stock                Sales integrity and to ensure acurate and up to date product line
+                           Add product whilst waiting for the
+                           product picture                      
 
                     
