@@ -3,9 +3,9 @@ User Story
 The user story is analogous to going to a high street and enterin a shop and taking you through the chronological motions of the shopper and the management.
 What are the shoppers intentions and how does the owner/management accomodate this?
 
-User                        Would Like to be able                    So that he/she can
-
-Shopper                     Viewing and Navigation                   See all different items in stock
+User                   |     Would Like to be able Viewing and Navigation |       So that he/she can
+-----------------------|--------------------------------------------------|
+Shopper                     See all different items in stock
 Shopper                     Go directly to a product                 Save Time and able to know if the product is available or not 
 Shopper                     Search for a product without
                             going through large search criteria      Save Time in comparing prices and finding a particular product.
