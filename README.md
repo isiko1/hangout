@@ -69,4 +69,8 @@ Product Maintenance(Management)
 
 
 
-https://validator.w3.org/
+https://validator.w3.org/ - Validated and checked HTML
+
+https://miniwebtool.com/django-secret-key-generator/ - Obtained secret Key
+
+https://jsonformatter.curiousconcept.com/ - Check Json format
