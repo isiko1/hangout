@@ -136,7 +136,7 @@ When the user carries out an action they should recieve a corresponding confirma
 For example if you login a message is generated to tell you you have done so. If you log out again a corresponding message is generated. 
 Fields with an asterix annotation are compulsory fields, if they are not completed then a message will be generated stating that. Accordingly, if they are not completed in line with the validation assigned to them such as mismatch of passwords or log in user details.
 
-Deployment of the project went through extensive testing due to experiencing many failed builds.
+Deployment of the project went through extensive testing due to experiencing many failed builds. Below is copy of the failed attempts.
 
 lutersweg@hotmail.com: Build failed
 Today at 9:34 AM · View build log
