@@ -66,6 +66,7 @@ The wireframes are in the project directory and depict the project concept which
 **Home Page**
 On arriving at the site the user is presented with a bright page with capturing slogans, navigation bar, search bar and a shop now button in the hope of enticing the user to check out the store.
 The user can go directly to the store and can choose to log in and register at any time by clicking on the *My Account* of he/she will be presented with dropdown options. 
+The user can return to the home page irrespective of where they are on the iste by just clicking on the title *Hangout*.
 
 My Profile: 
 The user profile is only available once the user has logged in and registered on the app. Once registered and entering the *My Profile*, the user is presented with their details at the top, delivery
@@ -113,10 +114,11 @@ Additional features I would implement are:
 * Django  - To expedite project development
 * CSS  - To aid visual lay out and style
 * Fontawsome - Used for the icons 
-* HTML * To aid structure and design
-* Javascript * To automate some of the functionalities 
-* Jquery * To expedite the DOM manipulation and handle events
-* Python * To aid simplicity and logic to the code
+* HTML - To aid structure and design
+* Javascript - To automate some of the functionalities 
+* Jquery - To expedite the DOM manipulation and handle events
+* Python - To aid simplicity and logic to the code
+* Postgress - To link up databases
 
 * AWS S3 [Amazon Web Service](https://aws.amazon.com) - The site is where the static files for the project are stored.
 * Facebook Developers [Facebook](https://developers.facebook.com/) - The site was used to create an alternative user login option.
