@@ -1,1 +1,1 @@
-web: gunicorn hangout.wsgi:application
+web:gunicorn hangout.wsgi:application
