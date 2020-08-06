@@ -109,8 +109,8 @@ AUTHENTICATION_BACKENDS = [
 
     # login using social media
     'social_core.backends.facebook.FacebookOAuth2',
-    # 'social_core.backends.twitter.TwitterOAuth', feature left to implement
-    # 'social_core.backends.github.GithubOAuth2',  feature left to implement
+    # 'social_core.backends.twitter.TwitterOAuth', todo
+    # 'social_core.backends.github.GithubOAuth2',  todo
 ]
 
 SITE_ID = 1

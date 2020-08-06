@@ -49,7 +49,7 @@ The title of the project was Sport Light and the link is below:
 
 https://github.com/isiko1/sport_light
 
-The wireframes are in the project directory and depict the project concept which was in motion until it came to a halt as it was becoming difficult to obtain the material and products.
+The wireframes are in a **pdf folder** in the project directory and depict the project concept which was in motion until it came to a halt as it was becoming difficult to obtain the material and products.
  
 # Features
 
@@ -71,6 +71,7 @@ The user can return to the home page irrespective of where they are on the iste 
 My Profile: 
 The user profile is only available once the user has logged in and registered on the app. Once registered and entering the *My Profile*, the user is presented with their details at the top, delivery
 details directly below and and a schedule of their orders directly adjacent.
+The user also has the option to attach a profile picture to their information at the bottom of the page.
 
 Login:
 As time is of the essence, which is a main concept and by-product of this app, the user is left to choose at which stage they would like to login and therefore are left to peruse the website at their leisure. However, they are reminded to login at the point of purchase. This ensures accurate customer and payment details. 
@@ -94,6 +95,7 @@ The user has the option of amending or deleting the order on arrival before goin
 
 Checkout:
 On arriving at checkout either through clicking on the shopping bag or the shop and messaging process, the user arrives at the checkout page where the user's personal details are collected.
+There are no delivery costs for all products purchased which is a unique selling point (USP).
 Payment cannot be completed until all the mandatory fields are completed. The user is also reminded to log in if they have not already done so.
 
 **This project design is inspired and based on ideas from the Django module Mini Project of which 90% of the code has been taken from and some adaptions made to some of that code to accomodate the desired functionality.**
@@ -160,7 +162,7 @@ lutersweg@hotmail.com: Build failed
 Today at 2:13 AM · View build log
 
 The failures were due to a configuration error in the AWS S3
-The error report is in the project director workspace/hangout/hangout-4 Build_Heroku.pdf
+The error report is in the  **pdf folder** in the project director workspace/hangout/hangout-4 Build_Heroku.pdf
 
 It was fixed in the end as i discovered it was due to the policy not being attached to the Group and also the user had also not been attached policy and the group. 
 
@@ -183,7 +185,7 @@ YouTube
 
 # Content
 
-90% of the code used in the project was copied from the Django Mini project with some modifications made to accomodate the functionality of the project. (ie, Department instead of Category)
+The majority of the code around 90%, used in the project was taken from the Django Mini project and modifications was made accordingly to some of that code to accomodate the functionality of this project. This was mainly because the ecommerce concept is identical and ubiquitous amongst the ecommerce applications.
 
 # Media
 The Home page image was obtained from [pixaby](https://pixabay.com/users/5688709-5688709/)
