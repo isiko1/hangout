@@ -132,6 +132,7 @@ Testing was conducted as follows:
 
 HTML was tested using W3 validator [W3C] (https://validator.w3.org/)
 I wrote the json for the products app in the fixtures folder and put them through the JSON formatter [JSON formatter](https://jsonformatter.curiousconcept.com/) to check. Once completed and checked for accurancy the json was loaded into the project successful. The products are in project correctly.
+Using *Inspect*, responsive design revealed on the Iphones 5SE/6/7/8, Moto G4, Galaxy S5 obscures some of the top views below the navbar. This is also noted in the **Bug** section below.
 
 At each stage of the development, tests were carried out on the effects, views, presentation and functionality of each implementation. 
 When the user carries out an action they should recieve a corresponding confirmation or error message.
